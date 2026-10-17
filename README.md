@@ -1,32 +1,30 @@
-# AI Adoption & Usage Analytics | Excel
+# AI Usage and Impact on Students and Professionals
 
-### Understanding AI adoption, productivity, and user behavior
+Data cleaning and Excel dashboard analyzing how students and professionals use AI tools, how much time they report saving, and how satisfied they are.
+
+![Excel](https://img.shields.io/badge/Excel-Formulas%20%7C%20Charts%20%7C%20Dashboard-1D6F42?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Data Cleaning](https://img.shields.io/badge/Data%20Cleaning-300%20rows%20to%20288-14B8A6?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Complete-F97316?style=for-the-badge)
 
 ## Project Overview
 
-This project analyzes AI usage patterns among students and working professionals across 20 countries. The objective was to understand how people use AI tools, whether usage is associated with productivity gains, and how satisfaction varies across platforms.
+This project takes a messy survey dataset on AI use and turns it into a clean, documented workbook with a one-page dashboard. The goal was to answer a simple question: how do students and professionals actually use AI, and does it pay off?
 
-Using Microsoft Excel, I transformed a raw dataset into a structured analytical workbook with documented cleaning steps, formula-driven analysis, and a visual dashboard.
+| | |
+|---|---|
+| Dataset | 300 survey records, 19 columns, respondents from 12 countries |
+| Final dataset | 288 records after removing duplicates |
+| Tool | Microsoft Excel |
+| Deliverable | A five-sheet workbook with a formula-driven dashboard |
 
-## Business Questions
+## Data Cleaning
 
-- Which AI tools have the highest adoption and user satisfaction?
-- How does AI usage differ between students and professionals?
-- Is greater AI usage associated with more time saved?
-- How do free and paid AI users compare in satisfaction?
-- What relationships exist between perceived productivity and satisfaction?
+The raw file contained duplicate rows, inconsistent spellings, numbers stored as text, impossible values, and free-text job titles in several languages. Key steps:
 
-## Tools & Skills
-
-**Microsoft Excel** — Data cleaning, standardization, formulas, comparative analysis, dashboard design, and data visualization.
-
-**Data Quality Management** — Duplicate identification, handling missing values, correcting inconsistent formats, and documenting cleaning decisions.
-
-**Analytical Methods** — Descriptive statistics, categorical comparisons, correlation analysis, and KPI reporting.
-
-## Data Preparation
-
-The original dataset contained 300 records. After identifying and removing 12 duplicate records, 288 unique records remained.
+- Removed 12 exact duplicate records
+- Blanked three impossible values (an age of 97, 23 hours of AI use per day, and a monthly student income of 250,000) instead of guessing replacements
+- Grouped 126 job and major titles into 7 fields so they could be analyzed
+- Kept odd but possible records and tagged them in a Data_Flags column
 
 Additional preparation included:
 - Converting inconsistently formatted numeric values
@@ -60,7 +58,17 @@ A strong positive correlation was observed between daily AI usage and reported w
 
 ## Excel Dashboard
 
-The workbook includes a visual dashboard summarizing AI adoption, usage behavior, satisfaction, and productivity-related measures.
+A formula-driven Excel dashboard analyzing AI adoption, usage patterns, productivity, and user satisfaction.
+
+### Dashboard Overview
+
+![AI Usage Dashboard Overview](screenshots/dashboard-overview.png)
+
+### Dashboard Charts
+
+![AI Usage Dashboard Charts](screenshots/dashboard-charts.png)
+
+**[View Full Excel Analysis](AI_Usage_Analysis.xlsx)**
 
 ## Workbook Structure
 
@@ -72,18 +80,21 @@ The workbook includes a visual dashboard summarizing AI adoption, usage behavior
 | Cleaning_Log | Documented cleaning decisions |
 | Raw_Data | Original source data |
 
+## Skills Demonstrated
+
+- Data cleaning and standardization
+- Excel formulas (COUNTIFS, AVERAGEIFS, CORREL, INDEX/MATCH, IFERROR)
+- Segmentation and correlation analysis
+- Dashboard design and data visualization
+- Documentation of assumptions and data quality decisions
+
 ## Business Relevance
 
 The analysis illustrates how organizations can use survey-style data to evaluate technology adoption, compare user experiences, and identify potential opportunities for AI training and productivity improvement.
 
 Findings describe the analyzed sample and should not be generalized to all AI users without additional validation.
 
-## Project File
-
-[View the Excel Analysis Workbook](AI_Usage_Analysis.xlsx)
-
 ---
 
 **Lazourde Alshafie**
-
 Business Intelligence Technology | University of North Florida
